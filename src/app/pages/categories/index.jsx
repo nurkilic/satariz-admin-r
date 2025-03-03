@@ -29,8 +29,10 @@ export const Categories = () => {
                 ...prevState,
                 [id]: prevState[id] ? [...prevState[id], ...response.data] : response.data
             }));
+            console.log(response.data)
             setLoading(false);
-            return response.data
+            return  response.data 
+            
         } catch (err) {
             setLoading(false);
         }
@@ -39,6 +41,7 @@ export const Categories = () => {
 
     useEffect(() => {
         fetchData()
+        
     }, []);
 
 

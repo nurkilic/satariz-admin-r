@@ -296,7 +296,7 @@ class ScrollComponent {
   public static resize() {
     // Window Resize Handling
     window.addEventListener('resize', function () {
-      let timer
+      let timer: number | undefined
       throttle(
         timer,
         () => {
