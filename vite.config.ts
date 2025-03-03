@@ -8,4 +8,7 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 3000,
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx'], // Hem TS hem JS dosyalarını destekle
+  },
 })

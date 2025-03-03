@@ -1,13 +1,12 @@
 import { lazy, FC, Suspense } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
-import { MasterLayout } from "../../_metronic/layout/MasterLayout.js";
+import { MasterLayout } from "../../_metronic/layout/MasterLayout.tsx";
 import TopBarProgress from "react-topbar-progress-indicator";
 import { DashboardWrapper } from "../pages/dashboard/DashboardWrapper.jsx";
 import { GeneralSettingWrapper } from "../pages/settings/GeneralSettings.jsx";
 import { Contracts } from "../pages/settings/Contracts.jsx";
-import { getCSSVariableValue } from "../../_metronic/assets/ts/_utils/index.js";
-import { WithChildren } from "../../_metronic/helpers/index.js";
-import BuilderPageWrapper from "../pages/layout-builder/BuilderPageWrapper.js";
+import { getCSSVariableValue } from "../../_metronic/assets/ts/_utils/index.ts";
+import BuilderPageWrapper from "../pages/layout-builder/BuilderPageWrapper.tsx";
 import { Provinces } from "../pages/geo-locations/Provinces.jsx";
 import { Companies } from "../pages/companies/index.jsx";
 import { CompanyProfile } from "../pages/companies/profile/index.jsx";
@@ -15,7 +14,7 @@ import { Categories } from "../pages/categories/index.jsx";
 
 const PrivateRoutes = () => {
   const UsersPage = lazy(() =>
-    import("../modules/apps/user-management/UsersPage.js")
+    import("../modules/apps/user-management/UsersPage.tsx")
   );
 
   return (
@@ -62,7 +61,7 @@ const PrivateRoutes = () => {
   );
 };
 
-const SuspensedView= ({ children }) => {
+const SuspensedView = ({ children }) => {
   const baseColor = getCSSVariableValue("--bs-primary");
   TopBarProgress.config({
     barColors: {
