@@ -2,9 +2,9 @@ import {useEffect, useState} from 'react'
 import * as Yup from 'yup'
 import clsx from 'clsx'
 import {useFormik} from 'formik'
-import {getUserByToken, login} from '../core/_requests'
-import {toAbsoluteUrl} from '../../../../_metronic/helpers'
-import {useAuth} from '../core/Auth'
+import {getUserByToken, login} from '../core/_requests.ts'
+import {toAbsoluteUrl} from '../../../../_metronic/helpers/index.ts'
+import {useAuth} from '../core/Auth.tsx'
 import {useNavigate} from "react-router-dom";
 import {setAuthState} from "../../../redux/slice/AuthSlice.tsx";
 import {useDispatch} from "react-redux"
