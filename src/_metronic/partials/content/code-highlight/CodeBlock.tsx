@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, FC } from "react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import  CopyToClipboard from "react-copy-to-clipboard";
 import { Highlight } from "prism-react-renderer";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
