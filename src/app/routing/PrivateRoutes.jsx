@@ -9,7 +9,8 @@ import { getCSSVariableValue } from "../../_metronic/assets/ts/_utils/index.ts";
 import BuilderPageWrapper from "../pages/layout-builder/BuilderPageWrapper.tsx";
 import { Provinces } from "../pages/geo-locations/Provinces.jsx";
 import { Companies } from "../pages/companies/index.jsx";
-import { CompanyProfile } from "../pages/companies/profile/index.jsx";
+import { CompanyProfile } from "../pages/companies/Profile/index.jsx";
+
 import { Categories } from "../pages/categories/index.jsx";
 
 const PrivateRoutes = () => {
