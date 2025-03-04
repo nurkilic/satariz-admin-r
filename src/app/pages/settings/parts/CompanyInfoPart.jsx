@@ -124,7 +124,7 @@ export const CompanyInfoPart = ({data: data}) => {
                             value={editor}
                             onChange={setEditor}
                             modules={modules} // Özelleştirilmiş toolbar
-                            formats={formats} // Desteklenen formatlar
+                            formats={formats} // Desteklenen formatlar  
                             placeholder="Buraya yazmaya başlayabilirsiniz..."
                         />
                     </div>
