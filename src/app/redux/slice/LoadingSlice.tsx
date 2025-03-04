@@ -1,20 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit';
-import type { RootState } from '../index';
+import { createSlice } from "@reduxjs/toolkit";
+import type { RootState } from "../index";
 
 const loadingSlice = createSlice({
-    name: 'loading',
-    initialState: { value: false },
-    reducers: {
-        showLoading: (state) => {
-            state.value = true;
-        },
-        hideLoading: (state) => {
-            state.value = false;
-        },
-        toggleLoading: (state) => {
-            state.value = !state.value;
-        },
+  name: "loading",
+  initialState: { value: false },
+  reducers: {
+    showLoading: (state) => {
+      state.value = true;
     },
+    hideLoading: (state) => {
+      state.value = false;
+    },
+    toggleLoading: (state) => {
+      state.value = !state.value;
+    },
+  },
 });
 
 export const { showLoading, hideLoading, toggleLoading } = loadingSlice.actions;

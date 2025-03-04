@@ -10,8 +10,8 @@ import loadingReducer from './slice/LoadingSlice.tsx'
 
 export const store = configureStore({
     reducer: {
-        auth: authReducer, 
-        loading: loadingReducer,
+        authReducer, 
+        loadingReducer,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({
