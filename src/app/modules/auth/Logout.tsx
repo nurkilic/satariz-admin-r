@@ -4,7 +4,7 @@ import {useAuth} from './core/Auth'
 
 //Redux - Dispatch - Actions - State
 import {useDispatch, useSelector} from 'react-redux'
-import {setAuthState, selectCurrentUser} from '../../redux/slice/authSlice'
+import {setAuthState, selectCurrentUser} from '../../redux/slice/AuthSlice'
 
 import {Error404} from '../../modules/errors/components/Error404'
 

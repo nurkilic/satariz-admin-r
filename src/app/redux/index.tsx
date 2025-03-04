@@ -5,13 +5,13 @@ import {configureStore} from '@reduxjs/toolkit'
 
 //Slice
 //import initialDataReducer from './slice/initialDataSlice'
-import authReducer from './slice/authSlice'
+import authReducer from './slice/AuthSlice.tsx'
 import loadingReducer from './slice/LoadingSlice.tsx'
 
 export const store = configureStore({
     reducer: {
-        authReducer,
-        loadingReducer,
+        auth: authReducer, 
+        loading: loadingReducer,
     },
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({

@@ -30,3 +30,7 @@ export function getUserData(token: string) {
         }
     });
 }
+
+export function requestPassword(email: string) {
+    return axios.post('/api/password-reset', {email});  
+}
