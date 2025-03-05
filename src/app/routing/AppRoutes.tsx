@@ -29,7 +29,7 @@ import { SETTINGS_DATA } from "../api/endpoints/settings";
  *
  * @see https://facebook.github.io/create-react-app/docs/using-the-public-folder
  */
-const { BASE_URL } = import.meta.env;
+const BASE_URL = "/";
 
 const AppRoutes: FC = () => {
   const dispatch = useDispatch();
